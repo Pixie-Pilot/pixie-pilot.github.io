@@ -5,19 +5,19 @@ import { Card, CardContent } from "@/components/ui/card";
 const Index = () => {
   const features = [
     {
-      icon: Zap,
-      title: "AI-Powered Precision",
-      description: "Advanced algorithms that understand 3D geometry and creative intent, delivering professional-quality results in seconds."
+      icon: Play,
+      title: "Full Control",
+      description: "Pixie understands your intent, producing professional-quality results while keeping you at the wheel."
     },
     {
       icon: Users,
       title: "Industry-Focused",
-      description: "Tailored specifically for game developers and film studios with workflows that integrate seamlessly into existing pipelines."
+      description: "Tailored for game developers and film studios with workflows that integrate seamlessly into existing pipelines."
     },
     {
       icon: Globe,
-      title: "Universal Compatibility",
-      description: "Works with all major 3D software including Maya, Blender, 3ds Max, and Cinema 4D with native plugin support."
+      title: "Seamless Integration",
+      description: "Works with Maya and Blender with native plugins, with plans to expand to all major 3D modeling software including 3ds Max and Cinema 4D."
     }
   ];
 
@@ -33,7 +33,7 @@ const Index = () => {
     {
       name: "Marcus Rodriguez",
       role: "VFX Supervisor, Stellar Studios",
-      content: "The AI assistant understands creative direction better than any tool I've used. It's like having a senior artist on demand.",
+      content: "Pixie understands creative direction better than any tool I've used. It's like having a senior artist on demand.",
       rating: 5
     },
     {
@@ -80,7 +80,7 @@ const Index = () => {
               for the Future
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Transform your creative vision into stunning 3D models with our intelligent assistant. 
+              Transform your creative vision into stunning 3D models with Pixie. 
               Built for game developers and film studios who demand excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -101,7 +101,7 @@ const Index = () => {
               Revolutionizing 3D Creation
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Our AI assistant doesn't just automate tasks—it understands your creative vision and brings it to life.
+              Pixie doesn't just automate tasks, she understands your intent and brings your vision to life.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -138,19 +138,31 @@ const Index = () => {
                   <div className="w-6 h-6 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">Video Game Development</h3>
-                    <p className="text-gray-300">Optimized for real-time rendering, LOD generation, and game-ready assets.</p>
+                    <div className="text-gray-300 space-y-2">
+                      <p>• Proposes LOD chains with multiple detail levels</p>
+                      <p>• Optimizes topology for target triangle budgets</p>
+                      <p>• Produces PBR-compliant materials and textures</p>
+                      <p>• Exports game-ready FBX/GLTF for Unity/Unreal</p>
+                      <p>• And more in progress!</p>
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-6 h-6 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">Film & Animation</h3>
-                    <p className="text-gray-300">High-resolution models with cinematic quality and detailed texturing.</p>
+                    <div className="text-gray-300 space-y-2">
+                      <p>• Creates high-resolution models with subdivision-ready topology</p>
+                      <p>• Produces UV layouts for VFX workflows</p>
+                      <p>• Post-processed to produce cinematic quality edge flow for smooth deformations.</p>
+                      <p>• Exports optimized formats for Maya and Blender.</p>
+                      <p>• And more in progress!</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative">
+            {/* <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-cyan-500/20 to-purple-600/20 rounded-2xl p-8 border border-purple-500/20">
                 <div className="w-full h-full bg-slate-800/50 rounded-xl flex items-center justify-center">
                   <div className="text-center">
@@ -161,7 +173,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -233,7 +245,7 @@ const Index = () => {
                 Empowering creators with AI-driven 3D modeling solutions for the entertainment industry.
               </p>
               <p className="text-gray-400 text-sm">
-                © 2024 PixiePilot. All rights reserved.
+                © 2025 PixiePilot. All rights reserved.
               </p>
             </div>
             <div>
