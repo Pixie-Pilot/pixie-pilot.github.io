@@ -1,4 +1,3 @@
-
 import { ArrowRight, Zap, Users, Globe, Star, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -22,6 +21,8 @@ const Index = () => {
     }
   ];
 
+  // Commented out testimonials since the product hasn't been released yet
+  /*
   const testimonials = [
     {
       name: "Sarah Chen",
@@ -42,6 +43,7 @@ const Index = () => {
       rating: 5
     }
   ];
+  */
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -57,10 +59,10 @@ const Index = () => {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
-              <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a>
+              {/* <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a> */}
               <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
               <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700">
-                Get Started
+                Join Waitlist
               </Button>
             </div>
           </div>
@@ -83,12 +85,8 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-4 hover-scale">
-                Start Free Trial
+                Join Waitlist
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-500/10 text-lg px-8 py-4">
-                <Play className="mr-2 h-5 w-5" />
-                Watch Demo
               </Button>
             </div>
           </div>
@@ -168,7 +166,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section - Commented out since product hasn't been released */}
+      {/*
       <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -199,6 +198,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -207,15 +207,12 @@ const Index = () => {
             Ready to Transform Your Workflow?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of creators who are already using PixiePilot to bring their 3D visions to life faster than ever before.
+            Be among the first to experience the future of 3D modeling. Join our waitlist to get early access when we launch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-4 hover-scale">
-              Start Your Free Trial
+              Join Waitlist
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-500/10 text-lg px-8 py-4">
-              Schedule Demo
             </Button>
           </div>
         </div>
