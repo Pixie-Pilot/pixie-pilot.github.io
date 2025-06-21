@@ -1,6 +1,7 @@
 import { ArrowRight, Zap, Users, Globe, Star, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const features = [
@@ -58,9 +59,9 @@ const Index = () => {
               <span className="text-white font-bold text-xl">PixiePilot</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
+              <Link to="/features" className="text-gray-300 hover:text-white transition-colors">Features</Link>
               {/* <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a> */}
-              <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
+              <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
               <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700">
                 Join Waitlist
               </Button>
@@ -251,17 +252,17 @@ const Index = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
+                <li><Link to="/features" className="hover:text-white transition-colors">Features</Link></li>
+                <li><Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+                <li><Link to="/documentation" className="hover:text-white transition-colors">Documentation</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
+                <li><Link to="/careers" className="hover:text-white transition-colors">Careers</Link></li>
+                <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>
