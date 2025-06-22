@@ -2,6 +2,7 @@ import { ArrowRight, Zap, Users, Globe, Star, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import WaitlistButton from "@/components/WaitlistButton";
 
 const Index = () => {
   const features = [
@@ -64,9 +65,7 @@ const Index = () => {
               <Link to="/features" className="text-gray-300 hover:text-white transition-colors">Features</Link>
               {/* <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a> */}
               <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
-              <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700">
-                Join Waitlist
-              </Button>
+              <WaitlistButton className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700" />
             </div>
           </div>
         </div>
@@ -87,10 +86,10 @@ const Index = () => {
               Built for game developers and film studios who demand excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-4 hover-scale">
-                Join Waitlist
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <WaitlistButton 
+                size="lg" 
+                className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-4 hover-scale"
+              />
             </div>
           </div>
         </div>
@@ -225,10 +224,10 @@ const Index = () => {
             Be among the first to experience the future of 3D modeling. Join our waitlist to get early access when we launch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-4 hover-scale">
-              Join Waitlist
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <WaitlistButton 
+              size="lg" 
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-4 hover-scale"
+            />
           </div>
         </div>
       </section>
