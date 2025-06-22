@@ -156,7 +156,7 @@ const Index = () => {
                     <div className="text-gray-300 space-y-2">
                       <p>• Creates high-resolution models with subdivision-ready topology</p>
                       <p>• Produces UV layouts for VFX workflows</p>
-                      <p>• Post-processed to produce cinematic quality edge flow for smooth deformations.</p>
+                      <p>• Optimized for cinematic quality edge flow for smooth deformations.</p>
                       <p>• Exports optimized formats for Maya and Blender.</p>
                       <p>• And more in progress!</p>
                     </div>
