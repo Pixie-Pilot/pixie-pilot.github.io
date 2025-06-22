@@ -82,7 +82,7 @@ const Index = () => {
               for the Future
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Transform your creative vision into stunning 3D models with Pixie. 
+              Transform your creative vision into stunning 3D models with Pixie. <br/>
               Built for game developers and film studios who demand excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
